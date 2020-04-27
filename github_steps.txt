@@ -1,0 +1,14 @@
+open Git Bash
+make sure it says "(master)" at the end, if not- "git init"
+to select the repo to download or make changes to "git remote add origin https://github.com/DLau98/test.git"
+"cd desktop" to change directory
+if already in repo, "git pull" to download any changes made by other user
+
+if you want to download the whole repo again, "git clone https://github.com/DLau98/test"
+
+to upload changes to github make sure your directory is in the downloaded git folder "cd test"
+"git add --all"
+"git commit -m "some message explaining changes""
+"git push"
+send discord message saying you changed the code to let the other user know to pull changes when they go into git
+
