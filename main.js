@@ -3,6 +3,7 @@ var camera = new THREE.PerspectiveCamera( 70, window.innerWidth/window.innerHeig
 camera.position.set(0,0,400);
 
 // This is the addition that I am making. Fuck git.
+//This is another test
 
 
 var pointlight = new THREE.PointLight(0xffffff,2,0);
