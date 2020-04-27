@@ -7,6 +7,12 @@ if already in repo, "git pull" to download any changes made by other user
 if you want to download the whole repo again, "git clone https://github.com/DLau98/test"
 
 to upload changes to github make sure your directory is in the downloaded git folder "cd test"
+
+OR
+
+Just right click "test" folder and choose "Git Bash here" - will automatically bring your GitBash to that directory
+
+---------------------------------------------------------------------------------------------------------------------
 "git add --all"
 "git commit -m "some message explaining changes""
 "git push"
