@@ -2,6 +2,9 @@ var scene = new THREE.Scene();
 var camera = new THREE.PerspectiveCamera( 70, window.innerWidth/window.innerHeight, 0.1, 1000 );
 camera.position.set(0,0,400);
 
+// This is the addition that I am making. Fuck git.
+
+
 var pointlight = new THREE.PointLight(0xffffff,2,0);
 pointlight.position.set(0,400,200);
 scene.add(pointlight);
