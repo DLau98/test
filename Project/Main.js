@@ -30,8 +30,16 @@ function init() {
     const radius = 32;
     const height = 40;
 
+    var pyraMaterials =
+        [
+            new THREE.MeshBasicMaterial({ map: new THREE.TextureLoader().load( "PyramidText.jpg"), side: THREE.DoubleSide}),
+            new THREE.MeshBasicMaterial({ map: new THREE.TextureLoader().load( "PyramidText.jpg"), side: THREE.DoubleSide}),
+            new THREE.MeshBasicMaterial({ map: new THREE.TextureLoader().load( "PyramidText.jpg"), side: THREE.DoubleSide}),
+            new THREE.MeshBasicMaterial({ map: new THREE.TextureLoader().load( "PyramidText.jpg"), side: THREE.DoubleSide})
+        ]
+
     const shape = new THREE.CylinderGeometry(0, radius, height, 4, 1 );
-    const p_material = new THREE.MeshPhongMaterial({color: 0xebe0a9, emissive: 0xd6d0b6});
+    const p_material = new THREE.MeshFaceMaterial(pyraMaterials)
     const pyramid = new THREE.Mesh(shape, p_material);
     pyramid.position.set(0,-10,0);
     scene.add(pyramid);
