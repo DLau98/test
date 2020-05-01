@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba1c0add-ce4f-408a-8d54-1e97eccf045d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Project/skyblue.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/Project/Main.js" afterDir="false" />
     </list>
@@ -39,8 +40,13 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Project" />
     <property name="settings.editor.selected.configurable" value="JavaScript.Libraries" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\sammc\Documents\GitHub\test\Project" />
+    </key>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -76,6 +82,7 @@
       <workItem from="1588265379285" duration="590000" />
       <workItem from="1588279087424" duration="607000" />
       <workItem from="1588362850738" duration="1977000" />
+      <workItem from="1588373669300" duration="1221000" />
     </task>
     <servers />
   </component>

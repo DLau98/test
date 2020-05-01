@@ -44,17 +44,28 @@ function init() {
     pyramid.position.set(0,-10,0);
     scene.add(pyramid);
 
-    // So, the floor or ground is on the ceiling and is slanted. I would use it as the sky, but it is crooked.
-    // If you use the position.set and change the middle value lower than 10, it will cut the pyramid off.
-    // We need to figure out how to make this the ground, and then how to make a sky box, or some kind of object for the sky.
-    // I have commented out the add line so that you can see it without it. 
+    var skyMaterials =
+        [
+            new THREE.MeshBasicMaterial({ map: new THREE.TextureLoader().load( "skyblue.jpg"), side: THREE.DoubleSide}),
+            new THREE.MeshBasicMaterial({ map: new THREE.TextureLoader().load( "skyblue.jpg"), side: THREE.DoubleSide}),
+            new THREE.MeshBasicMaterial({ map: new THREE.TextureLoader().load( "skyblue.jpg"), side: THREE.DoubleSide}),
+            new THREE.MeshBasicMaterial({ map: new THREE.TextureLoader().load( "SandTexture.jpg"), side: THREE.DoubleSide}),
+            new THREE.MeshBasicMaterial({ map: new THREE.TextureLoader().load( "skyblue.jpg"), side: THREE.DoubleSide}),
+            new THREE.MeshBasicMaterial({ map: new THREE.TextureLoader().load( "skyblue.jpg"), side: THREE.DoubleSide})
+        ]
 
-    const ground = new THREE.PlaneGeometry( 1000, 1000, 10);
-    const g_material = new THREE.MeshPhongMaterial({color:0x4f9bd1, emissive:0x4f9bd1 });
-    const sand_ground = new THREE.Mesh(ground, g_material);
-    sand_ground.position.set(0, 50, 0);
-    sand_ground.rotation.set(Math.PI*.5,0,0);
-    scene.add(sand_ground);  //*** If you want to see the ground plane, just remove this comment.
+    var geometry = new THREE.BoxGeometry( 300, 300, 300 );
+    var material = new THREE.MeshFaceMaterial( skyMaterials );
+    var cube = new THREE.Mesh( geometry, material );
+    scene.add( cube );
+
+
+    //const ground = new THREE.PlaneGeometry( 1000, 1000, 10);
+    //const g_material = new THREE.MeshPhongMaterial({color:0x4f9bd1, emissive:0x4f9bd1 });
+    //const sand_ground = new THREE.Mesh(ground, g_material);
+    //sand_ground.position.set(0, 50, 0);
+    //sand_ground.rotation.set(Math.PI*.5,0,0);
+   // scene.add(sand_ground);  //*** If you want to see the ground plane, just remove this comment.
 
     // Sun code
     var sun = new THREE.SphereGeometry( 5, 32, 32 );
@@ -109,8 +120,8 @@ function animate() {
     target.x = ( 1 - mouse.x ) * 0.002;
     target.y = ( 1 - mouse.y ) * 0.002;
 
-    camera.rotation.x += 0.05 * ( target.y - camera.rotation.x );
-    camera.rotation.y += 0.05 * ( target.x - camera.rotation.y );
+    camera.rotation.x += 0.02 * ( target.y - camera.rotation.x );
+    camera.rotation.y += 0.02 * ( target.x - camera.rotation.y );
 
     requestAnimationFrame( animate );
     renderer.render( scene, camera );
