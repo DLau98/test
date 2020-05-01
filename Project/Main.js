@@ -4,7 +4,6 @@ const mouse = new THREE.Vector2();
 const target = new THREE.Vector2();
 const windowHalf = new THREE.Vector2( window.innerWidth / 2, window.innerHeight / 2 );
 
-//YOO HOO big summer blowout
 
 init();
 animate();
@@ -54,7 +53,7 @@ function init() {
     const sand_ground = new THREE.Mesh(ground, g_material);
     sand_ground.position.set(0, 50, 0);
     sand_ground.rotation.set(Math.PI*.5,0,0);
-    scene.add(sand_ground);  //*** If you want to see the ground plane, just remove this comment.
+    //scene.add(sand_ground);  //*** If you want to see the ground plane, just remove this comment.
 
     // Sun code
     var sun = new THREE.SphereGeometry( 5, 32, 32 );
@@ -63,6 +62,20 @@ function init() {
     sphere.position.set(40, 40,-10);
     scene.add( sphere );
 
+    //Sky Box
+    var geometry = new THREE.CubeGeometry(1000, 1000, 1000);
+    var cubeMaterials =
+        [
+            new THREE.MeshBasicMaterial( {map: new THREE.TextureLoader( ).load("front.png"), side: THREE.DoubleSide}),
+            new THREE.MeshBasicMaterial( {map: new THREE.TextureLoader( ).load("back.png"), side: THREE.DoubleSide}),
+            new THREE.MeshBasicMaterial( {map: new THREE.TextureLoader( ).load("top.png"), side: THREE.DoubleSide}),
+            new THREE.MeshBasicMaterial( {map: new THREE.TextureLoader( ).load("bottom.png"), side: THREE.DoubleSide}),
+            new THREE.MeshBasicMaterial( {map: new THREE.TextureLoader( ).load("right.png"), side: THREE.DoubleSide}),
+            new THREE.MeshBasicMaterial( {map: new THREE.TextureLoader( ).load("left.png"), side: THREE.DoubleSide})
+        ];
+    var cubeMaterial = new THREE.MeshFaceMaterial(cubeMaterials);
+    var cube = new THREE.Mesh(geometry, cubeMaterial);
+    scene.add(cube);
 
     renderer = new THREE.WebGLRenderer( { antialias: true } );
     renderer.setSize( window.innerWidth, window.innerHeight );
