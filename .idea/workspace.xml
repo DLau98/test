@@ -2,16 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba1c0add-ce4f-408a-8d54-1e97eccf045d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Project/back.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project/bottom.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project/front.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project/left.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project/right.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project/sky.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project/top.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project/PaintBricks.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project/SandPaint.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project/backside.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project/frontside.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project/leftside.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project/rightside.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project/sand.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project/wood.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/Project/Main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/skyblue.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/back.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/bottom.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/front.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/left.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/right.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/top.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +99,7 @@
       <workItem from="1588265379285" duration="590000" />
       <workItem from="1588279087424" duration="607000" />
       <workItem from="1588362850738" duration="1977000" />
-      <workItem from="1588373669300" duration="3140000" />
+      <workItem from="1588373669300" duration="14493000" />
     </task>
     <task id="LOCAL-00001" summary="Got the box to work, and got the ground to be a different image!">
       <created>1588377031977</created>
@@ -102,7 +108,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588377031977</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Changed the background. I dont know how much I like it though. We should consider getting a desert skybox, or maybe not textiring everything and going for a clean but basic look.">
+      <created>1588378992170</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1588378992170</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -110,13 +123,14 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Got the box to work, and got the ground to be a different image!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Got the box to work, and got the ground to be a different image!" />
+    <MESSAGE value="Changed the background. I dont know how much I like it though. We should consider getting a desert skybox, or maybe not textiring everything and going for a clean but basic look." />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed the background. I dont know how much I like it though. We should consider getting a desert skybox, or maybe not textiring everything and going for a clean but basic look." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="305" y="0" key="CommitChangelistDialog2" timestamp="1588377031104">
+    <state x="305" y="0" key="CommitChangelistDialog2" timestamp="1588378991340">
       <screen x="0" y="0" width="1360" height="738" />
     </state>
-    <state x="305" y="0" key="CommitChangelistDialog2/0.0.1360.738/1360.-122.1280.994@0.0.1360.738" timestamp="1588377031104" />
+    <state x="305" y="0" key="CommitChangelistDialog2/0.0.1360.738/1360.-122.1280.994@0.0.1360.738" timestamp="1588378991340" />
     <state x="1220" y="279" key="FileChooserDialogImpl" timestamp="1585068019352">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -129,5 +143,9 @@
       <screen x="0" y="0" width="1360" height="738" />
     </state>
     <state x="489" y="286" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1360.738/1360.-122.1280.994@0.0.1360.738" timestamp="1588377362445" />
+    <state x="336" y="165" key="run.anything.popup" timestamp="1588380394389">
+      <screen x="0" y="0" width="1360" height="738" />
+    </state>
+    <state x="336" y="165" key="run.anything.popup/0.0.1360.738/1360.-122.1280.994@0.0.1360.738" timestamp="1588380394389" />
   </component>
 </project>

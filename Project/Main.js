@@ -13,16 +13,16 @@ function init() {
 
     camera = new THREE.PerspectiveCamera( 45, window.innerWidth / window.innerHeight, 0.1, 500 );
     camera.position.z = 150;
-    camera.position.y= -10;
+    camera.position.y= -40;
 
     scene = new THREE.Scene();
 
     const light = new THREE.PointLight(0xfff08c,0.30,0);
-    light.position.set(40, 30,-10);
+    light.position.set(40, 80,-10);
     scene.add(light)
 
-    const ambientLight = new THREE.AmbientLight( 0xf0de65, .10 ); // soft white light
-    ambientLight.position.set(45, 30,-10);
+    const ambientLight = new THREE.AmbientLight( 0xf0de65, .15 ); // soft white light
+    ambientLight.position.set(45, 80,-10);
     ambientLight.castShadow = true;
     scene.add( ambientLight );
 
@@ -30,50 +30,71 @@ function init() {
     const radius = 32;
     const height = 40;
 
-    var pyraMaterials =
+
+    var pMat =
         [
-            new THREE.MeshBasicMaterial({ map: new THREE.TextureLoader().load( "PyramidText.jpg"), side: THREE.DoubleSide}),
-            new THREE.MeshBasicMaterial({ map: new THREE.TextureLoader().load( "PyramidText.jpg"), side: THREE.DoubleSide}),
-            new THREE.MeshBasicMaterial({ map: new THREE.TextureLoader().load( "PyramidText.jpg"), side: THREE.DoubleSide}),
-            new THREE.MeshBasicMaterial({ map: new THREE.TextureLoader().load( "PyramidText.jpg"), side: THREE.DoubleSide})
+            new THREE.MeshBasicMaterial({ map: new THREE.TextureLoader().load( "PaintBricks.png"), side: THREE.DoubleSide}),
+            new THREE.MeshBasicMaterial({ map: new THREE.TextureLoader().load( "PaintBricks.png"), side: THREE.DoubleSide}),
+            new THREE.MeshBasicMaterial({ map: new THREE.TextureLoader().load( "PaintBricks.png"), side: THREE.DoubleSide}),
+            new THREE.MeshBasicMaterial({ map: new THREE.TextureLoader().load( "PaintBricks.png"), side: THREE.DoubleSide}),
+            new THREE.MeshBasicMaterial({ map: new THREE.TextureLoader().load( "PaintBricks.png"), side: THREE.DoubleSide}),
+            new THREE.MeshBasicMaterial({ map: new THREE.TextureLoader().load( "PaintBricks.png"), side: THREE.DoubleSide})
         ]
 
-    const shape = new THREE.CylinderGeometry(0, radius, height, 4, 1 );
-    const p_material = new THREE.MeshFaceMaterial(pyraMaterials)
-    const pyramid = new THREE.Mesh(shape, p_material);
-    pyramid.position.set(0,-10,0);
-    scene.add(pyramid);
+    const pyramid_shape = new THREE.CylinderGeometry(0, radius, height, 4, 1 );
+    const pMaterial = new THREE.MeshFaceMaterial( pMat);
+    const Pyramid = new THREE.Mesh( pyramid_shape, pMaterial );
+    Pyramid.position.set(0,-32,0);
+    scene.add( Pyramid );
 
     var skyMaterials =
         [
-            new THREE.MeshBasicMaterial({ map: new THREE.TextureLoader().load( "right.png"), side: THREE.DoubleSide}),// right side
-            new THREE.MeshBasicMaterial({ map: new THREE.TextureLoader().load( "left.png"), side: THREE.DoubleSide}), // left side
-            new THREE.MeshBasicMaterial({ map: new THREE.TextureLoader().load( "top.png"), side: THREE.DoubleSide}), // top
-            new THREE.MeshBasicMaterial({ map: new THREE.TextureLoader().load( "bottom.png"), side: THREE.DoubleSide}), //bottom
-            new THREE.MeshBasicMaterial({ map: new THREE.TextureLoader().load( "back.png"), side: THREE.DoubleSide}), // back
-            new THREE.MeshBasicMaterial({ map: new THREE.TextureLoader().load( "front.png"), side: THREE.DoubleSide}) // front
+            new THREE.MeshBasicMaterial({ map: new THREE.TextureLoader().load( "rightside.png"), side: THREE.DoubleSide}),// right side
+            new THREE.MeshBasicMaterial({ map: new THREE.TextureLoader().load( "leftside.png"), side: THREE.DoubleSide}), // left side
+            new THREE.MeshBasicMaterial({ map: new THREE.TextureLoader().load( "sky.png"), side: THREE.DoubleSide}), // top
+            new THREE.MeshBasicMaterial({ map: new THREE.TextureLoader().load( "SandPaint.png"), side: THREE.DoubleSide}), //bottom
+            new THREE.MeshBasicMaterial({ map: new THREE.TextureLoader().load( "backside.png"), side: THREE.DoubleSide}), // back
+            new THREE.MeshBasicMaterial({ map: new THREE.TextureLoader().load( "frontside.png"), side: THREE.DoubleSide}) // front
         ]
 
-    var skybox = new THREE.BoxGeometry( 300, 300, 300 );
-    var sky_material = new THREE.MeshFaceMaterial( skyMaterials );
-    var sky = new THREE.Mesh( skybox, sky_material );
+    const skybox = new THREE.BoxGeometry( 350, 350, 350 );
+    const sky_material = new THREE.MeshFaceMaterial( skyMaterials );
+    const sky = new THREE.Mesh( skybox, sky_material );
     sky.position.set(0, 125, 0);
     scene.add( sky );
-
-
-    //const ground = new THREE.PlaneGeometry( 1000, 1000, 10);
-    //const g_material = new THREE.MeshPhongMaterial({color:0x4f9bd1, emissive:0x4f9bd1 });
-    //const sand_ground = new THREE.Mesh(ground, g_material);
-    //sand_ground.position.set(0, 50, 0);
-    //sand_ground.rotation.set(Math.PI*.5,0,0);
-   // scene.add(sand_ground);  //*** If you want to see the ground plane, just remove this comment.
 
     // Sun code
     var sun = new THREE.SphereGeometry( 5, 32, 32 );
     var sun_material = new THREE.MeshBasicMaterial( {color: 0xffff00, emmisive: 0xf7b945 } );
     var sphere = new THREE.Mesh( sun, sun_material );
-    sphere.position.set(40, 40,-10);
+    sphere.position.set(40, 70,-10);
     scene.add( sphere );
+
+    // sign code!
+
+    var sign_stand = new THREE.CylinderGeometry( .5, .5, 4, 3.2 );
+    var sign_material = new THREE.MeshBasicMaterial( {color: 0xa17806} );
+    var stand = new THREE.Mesh( sign_stand, sign_material );
+    stand.position.set(-25, -45, 120);
+    scene.add( stand );
+
+    var sign_materials =
+        [
+            new THREE.MeshBasicMaterial({ map: new THREE.TextureLoader().load( "wood.jpg"), side: THREE.DoubleSide}),// right side
+            new THREE.MeshBasicMaterial({ map: new THREE.TextureLoader().load( "wood.jpg"), side: THREE.DoubleSide}),// right side
+            new THREE.MeshBasicMaterial({ map: new THREE.TextureLoader().load( "wood.jpg"), side: THREE.DoubleSide}),// right side
+            new THREE.MeshBasicMaterial({ map: new THREE.TextureLoader().load( "wood.jpg"), side: THREE.DoubleSide}),// right side
+            new THREE.MeshBasicMaterial({ map: new THREE.TextureLoader().load( "wood.jpg"), side: THREE.DoubleSide}),// right side
+            new THREE.MeshBasicMaterial({ map: new THREE.TextureLoader().load( "wood.jpg"), side: THREE.DoubleSide}),// right side
+        ]
+
+    const sign_board = new THREE.BoxGeometry( 8, 3, .5 );
+    const sign_mat = new THREE.MeshFaceMaterial( sign_materials );
+    const sign = new THREE.Mesh( sign_board, sign_mat );
+    sign.position.set(-25, -41.5, 120);
+    sign.rotation.set(0, Math.PI*2.2, 0);
+    scene.add( sign );
+
 
 
     renderer = new THREE.WebGLRenderer( { antialias: true } );
@@ -121,8 +142,8 @@ function animate() {
     target.x = ( 1 - mouse.x ) * 0.002;
     target.y = ( 1 - mouse.y ) * 0.002;
 
-    camera.rotation.x += 0.02 * ( target.y - camera.rotation.x );
-    camera.rotation.y += 0.02 * ( target.x - camera.rotation.y );
+    camera.rotation.x += 0.006 * ( target.y - camera.rotation.x );
+    camera.rotation.y += 0.006 * ( target.x - camera.rotation.y );
 
     requestAnimationFrame( animate );
     renderer.render( scene, camera );
