@@ -4,12 +4,6 @@
     <list default="true" id="ba1c0add-ce4f-408a-8d54-1e97eccf045d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/Project/Main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/skybox/back.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/skybox/bottom.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/skybox/front.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/skybox/left.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/skybox/right.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/skybox/top.PNG" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,6 +76,9 @@
       <workItem from="1588265379285" duration="590000" />
       <workItem from="1588279087424" duration="607000" />
       <workItem from="1588362850738" duration="8238000" />
+      <workItem from="1588452936637" duration="21000" />
+      <workItem from="1588452968198" duration="1000" />
+      <workItem from="1588453305134" duration="40000" />
     </task>
     <servers />
   </component>

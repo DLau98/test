@@ -46,7 +46,7 @@ function init() {
     // So, the floor or ground is on the ceiling and is slanted. I would use it as the sky, but it is crooked.
     // If you use the position.set and change the middle value lower than 10, it will cut the pyramid off.
     // We need to figure out how to make this the ground, and then how to make a sky box, or some kind of object for the sky.
-    // I have commented out the add line so that you can see it without it. 
+    // I have commented out the add line so that you can see it without it.
 
     const ground = new THREE.PlaneGeometry( 1000, 1000, 10);
     const g_material = new THREE.MeshPhongMaterial({color:0x4f9bd1, emissive:0x4f9bd1 });
@@ -155,5 +155,4 @@ function onDocumentKeyDown(event) {
     }
     render();
 };
-
 
