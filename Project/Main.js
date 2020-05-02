@@ -27,8 +27,8 @@ function init() {
     scene.add( ambientLight );
 
     // Pyramid Code
-    const radius = 32;
-    const height = 40;
+    const radius = 64;
+    const height = 80;
 
 
     var pMat =

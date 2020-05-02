@@ -2,22 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba1c0add-ce4f-408a-8d54-1e97eccf045d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Project/PaintBricks.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project/SandPaint.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project/backside.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project/frontside.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project/leftside.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project/rightside.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project/sand.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project/wood.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/Project/Main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/back.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/bottom.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/front.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/left.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/right.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/top.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,6 +85,7 @@
       <workItem from="1588279087424" duration="607000" />
       <workItem from="1588362850738" duration="1977000" />
       <workItem from="1588373669300" duration="14493000" />
+      <workItem from="1588452205155" duration="341000" />
     </task>
     <task id="LOCAL-00001" summary="Got the box to work, and got the ground to be a different image!">
       <created>1588377031977</created>
