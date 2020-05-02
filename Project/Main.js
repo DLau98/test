@@ -46,18 +46,19 @@ function init() {
 
     var skyMaterials =
         [
-            new THREE.MeshBasicMaterial({ map: new THREE.TextureLoader().load( "skyblue.jpg"), side: THREE.DoubleSide}),
-            new THREE.MeshBasicMaterial({ map: new THREE.TextureLoader().load( "skyblue.jpg"), side: THREE.DoubleSide}),
-            new THREE.MeshBasicMaterial({ map: new THREE.TextureLoader().load( "skyblue.jpg"), side: THREE.DoubleSide}),
-            new THREE.MeshBasicMaterial({ map: new THREE.TextureLoader().load( "SandTexture.jpg"), side: THREE.DoubleSide}),
-            new THREE.MeshBasicMaterial({ map: new THREE.TextureLoader().load( "skyblue.jpg"), side: THREE.DoubleSide}),
-            new THREE.MeshBasicMaterial({ map: new THREE.TextureLoader().load( "skyblue.jpg"), side: THREE.DoubleSide})
+            new THREE.MeshBasicMaterial({ map: new THREE.TextureLoader().load( "right.png"), side: THREE.DoubleSide}),// right side
+            new THREE.MeshBasicMaterial({ map: new THREE.TextureLoader().load( "left.png"), side: THREE.DoubleSide}), // left side
+            new THREE.MeshBasicMaterial({ map: new THREE.TextureLoader().load( "top.png"), side: THREE.DoubleSide}), // top
+            new THREE.MeshBasicMaterial({ map: new THREE.TextureLoader().load( "bottom.png"), side: THREE.DoubleSide}), //bottom
+            new THREE.MeshBasicMaterial({ map: new THREE.TextureLoader().load( "back.png"), side: THREE.DoubleSide}), // back
+            new THREE.MeshBasicMaterial({ map: new THREE.TextureLoader().load( "front.png"), side: THREE.DoubleSide}) // front
         ]
 
-    var geometry = new THREE.BoxGeometry( 300, 300, 300 );
-    var material = new THREE.MeshFaceMaterial( skyMaterials );
-    var cube = new THREE.Mesh( geometry, material );
-    scene.add( cube );
+    var skybox = new THREE.BoxGeometry( 300, 300, 300 );
+    var sky_material = new THREE.MeshFaceMaterial( skyMaterials );
+    var sky = new THREE.Mesh( skybox, sky_material );
+    sky.position.set(0, 125, 0);
+    scene.add( sky );
 
 
     //const ground = new THREE.PlaneGeometry( 1000, 1000, 10);
