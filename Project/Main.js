@@ -30,7 +30,6 @@ function init() {
     const radius = 64;
     const height = 80;
 
-
     var pMat =
         [
             new THREE.MeshBasicMaterial({ map: new THREE.TextureLoader().load( "PaintBricks.png"), side: THREE.DoubleSide}),
@@ -73,7 +72,7 @@ function init() {
     // sign code!
 
     var sign_stand = new THREE.CylinderGeometry( .5, .5, 4, 3.2 );
-    var sign_material = new THREE.MeshBasicMaterial( {color: 0xa17806} );
+    var sign_material = new THREE.MeshBasicMaterial( {color: 0x4a3200} );
     var stand = new THREE.Mesh( sign_stand, sign_material );
     stand.position.set(-25, -45, 120);
     scene.add( stand );
