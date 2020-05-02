@@ -75,6 +75,7 @@ function init() {
         ];
     var cubeMaterial = new THREE.MeshFaceMaterial(cubeMaterials);
     var cube = new THREE.Mesh(geometry, cubeMaterial);
+    cube.position.set(0,0,0);
     scene.add(cube);
 
     renderer = new THREE.WebGLRenderer( { antialias: true } );
