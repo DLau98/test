@@ -62,21 +62,23 @@ function init() {
     sphere.position.set(40, 40,-10);
     scene.add( sphere );
 
-    //Sky Box
-    var geometry = new THREE.CubeGeometry(1000, 1000, 1000);
-    var cubeMaterials =
+
+
+    var skyMaterials =
         [
-            new THREE.MeshBasicMaterial( {map: new THREE.TextureLoader( ).load("front.png"), side: THREE.DoubleSide}),
-            new THREE.MeshBasicMaterial( {map: new THREE.TextureLoader( ).load("back.png"), side: THREE.DoubleSide}),
-            new THREE.MeshBasicMaterial( {map: new THREE.TextureLoader( ).load("top.png"), side: THREE.DoubleSide}),
-            new THREE.MeshBasicMaterial( {map: new THREE.TextureLoader( ).load("bottom.png"), side: THREE.DoubleSide}),
-            new THREE.MeshBasicMaterial( {map: new THREE.TextureLoader( ).load("right.png"), side: THREE.DoubleSide}),
-            new THREE.MeshBasicMaterial( {map: new THREE.TextureLoader( ).load("left.png"), side: THREE.DoubleSide})
-        ];
-    var cubeMaterial = new THREE.MeshFaceMaterial(cubeMaterials);
-    var cube = new THREE.Mesh(geometry, cubeMaterial);
-    cube.position.set(0,0,0);
-    scene.add(cube);
+            new THREE.MeshBasicMaterial({ map: new THREE.TextureLoader().load( "right.png"), side: THREE.DoubleSide}),// right side
+            new THREE.MeshBasicMaterial({ map: new THREE.TextureLoader().load( "left.png"), side: THREE.DoubleSide}), // left side
+            new THREE.MeshBasicMaterial({ map: new THREE.TextureLoader().load( "top.png"), side: THREE.DoubleSide}), // top
+            new THREE.MeshBasicMaterial({ map: new THREE.TextureLoader().load( "bottom.png"), side: THREE.DoubleSide}), //bottom
+            new THREE.MeshBasicMaterial({ map: new THREE.TextureLoader().load( "back.png"), side: THREE.DoubleSide}), // back
+            new THREE.MeshBasicMaterial({ map: new THREE.TextureLoader().load( "front.png"), side: THREE.DoubleSide}) // front
+        ]
+
+    const skybox = new THREE.BoxGeometry( 350, 350, 350 );
+    const sky_material = new THREE.MeshFaceMaterial( skyMaterials );
+    const sky = new THREE.Mesh( skybox, sky_material );
+    sky.position.set(0, 125, 0);
+    scene.add( sky );
 
     renderer = new THREE.WebGLRenderer( { antialias: true } );
     renderer.setSize( window.innerWidth, window.innerHeight );
