@@ -178,12 +178,17 @@ window.addEventListener('resize', function()
 controls = new THREE.OrbitControls(camera, renderer.domElement);
 
 //create shape
-var geometry = new THREE.BoxGeometry(1, 1, 1);
+var geometry = new THREE.BoxGeometry(5, 1, 9);
 
 //create material, color, or texture
-var material = new THREE.MeshBasicMaterial({color:0xFFFFFF, wireframe: true});
+var material = new THREE.MeshPhongMaterial({color:0xFeFeFe, wireframe: false});
 var cube = new THREE.Mesh(geometry, material);
+cube.position.set(20,35,0);
 scene.add(cube);
+
+var step = 0;
+
+
 
 const radius = 8;
 const height = 10;
@@ -248,7 +253,10 @@ var update = function()
 //draw scene
 var render = function()
 {
-  renderer.render(scene, camera);
+    step += 0.003;
+    cube.position.x = 50*Math.cos(step);
+    cube.position.z = 50*Math.sin(step);
+    renderer.render(scene, camera);
 };
 
 var GameLoop = function()
