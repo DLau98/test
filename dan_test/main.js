@@ -160,7 +160,7 @@
 //
 
 var scene = new THREE.Scene();
-var camera = new THREE.PerspectiveCamera(75, window.innerWidth/ window.innerHeight, 0.1, 1000);
+var camera = new THREE.PerspectiveCamera(75, window.innerWidth/ window.innerHeight, 0.1, 3000);
 
 var renderer = new THREE.WebGLRenderer();
 renderer.setSize(window.innerWidth, window.innerHeight);
@@ -178,12 +178,12 @@ window.addEventListener('resize', function()
 controls = new THREE.OrbitControls(camera, renderer.domElement);
 
 //create shape
-var geometry = new THREE.BoxGeometry(5, 1, 9);
+var geometry = new THREE.BoxGeometry(9, 1, 5);
 
 //create material, color, or texture
 var material = new THREE.MeshPhongMaterial({color:0xFeFeFe, wireframe: false});
 var cube = new THREE.Mesh(geometry, material);
-cube.position.set(20,35,0);
+cube.position.set(3,35,-4);
 scene.add(cube);
 
 var step = 0;
@@ -247,15 +247,15 @@ scene.add(ambientLight);
 var update = function()
 {
     //cube.rotation.x += 0.01;
-    //cube.rotation.y += 0.005;
+    cube.rotation.y -= 0.003;
 };
 
 //draw scene
 var render = function()
 {
     step += 0.003;
-    cube.position.x = 50*Math.cos(step);
-    cube.position.z = 50*Math.sin(step);
+    cube.position.x = 35*Math.cos(step);
+    cube.position.z = 35*Math.sin(step);
     renderer.render(scene, camera);
 };
 
