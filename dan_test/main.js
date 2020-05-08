@@ -188,8 +188,6 @@ scene.add(cube);
 
 var step = 0;
 
-
-
 const radius = 8;
 const height = 10;
 

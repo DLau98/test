@@ -39,7 +39,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/cs371_quaterion_class/cs371_quaterion_class" />
     <property name="settings.editor.selected.configurable" value="JavaScript.Libraries" />
   </component>
   <component name="ServiceViewManager">
@@ -91,9 +91,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1220" y="279" key="FileChooserDialogImpl" timestamp="1588371958869">
+    <state x="1220" y="279" key="FileChooserDialogImpl" timestamp="1588968017126">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="1220" y="279" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1588968017126" />
     <state x="1220" y="279" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1588371958869" />
     <state x="922" y="166" key="SettingsEditor" timestamp="1584478543872">
       <screen x="0" y="0" width="1920" height="1040" />
