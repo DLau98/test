@@ -53,7 +53,7 @@ function init() {
     const sand_ground = new THREE.Mesh(ground, g_material);
     sand_ground.position.set(0, 50, 0);
     sand_ground.rotation.set(Math.PI*.5,0,0);
-    //scene.add(sand_ground);  //*** If you want to see the ground plane, just remove this comment.
+    scene.add(sand_ground);  //*** If you want to see the ground plane, just remove this comment.
 
     // Sun code
     var sun = new THREE.SphereGeometry( 5, 32, 32 );

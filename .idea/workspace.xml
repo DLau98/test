@@ -3,7 +3,25 @@
   <component name="ChangeListManager">
     <list default="true" id="ba1c0add-ce4f-408a-8d54-1e97eccf045d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dan_test/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/dan_test/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/Project/Main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dan_test/OrbitControls.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dan_test/PointerLockControls.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dan_test/PyramidText.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dan_test/SandTexture.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dan_test/back.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dan_test/back2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dan_test/bottom.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dan_test/bottom2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dan_test/front.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dan_test/front2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dan_test/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dan_test/left.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dan_test/left2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dan_test/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dan_test/right.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dan_test/right2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dan_test/top.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dan_test/top2.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +57,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/cs371_quaterion_class/cs371_quaterion_class" />
+    <property name="last_opened_file_path" value="F:/CS 371- Computer Graphics/HW/HW 2/main.js" />
     <property name="settings.editor.selected.configurable" value="JavaScript.Libraries" />
   </component>
   <component name="ServiceViewManager">
@@ -84,6 +102,7 @@
       <workItem from="1588462414200" duration="718000" />
       <workItem from="1588470410094" duration="1216000" />
       <workItem from="1588708410079" duration="1687000" />
+      <workItem from="1589088724090" duration="4908000" />
     </task>
     <servers />
   </component>
@@ -91,14 +110,18 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1220" y="279" key="FileChooserDialogImpl" timestamp="1588968017126">
+    <state x="1220" y="279" key="FileChooserDialogImpl" timestamp="1589093101997">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1220" y="279" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1588968017126" />
+    <state x="1220" y="279" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1589093101997" />
     <state x="1220" y="279" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1588371958869" />
     <state x="922" y="166" key="SettingsEditor" timestamp="1584478543872">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="922" y="166" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1584478543872" />
+    <state x="953" y="0" width="974" height="1047" key="dock-window-1" timestamp="1589089788918">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="953" y="0" width="974" height="1047" key="dock-window-1/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1589089788918" />
   </component>
 </project>
